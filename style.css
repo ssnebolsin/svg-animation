@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.pic{
+    height: 50vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#man{
+    animation-name: jump;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+@keyframes jump{
+    0%{
+        translate: 0 -10px;
+    }
+    25%, 100%{
+        translate: 0 10px;
+    }
+}
+
+#bar1{
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+#bar2{
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-delay: .5s;
+}
+#bar3{
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-delay: 1s;
+}
+#bar4{
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-delay: 1.5s;
+}
+#bar5{
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-delay: 2s;
+}
+
+@keyframes grow{
+    0%{
+        transform: scaleY(0);
+    }
+    20%,100%{
+        transform: scaleY(1);
+    }
+}
+
+#linechart{
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes appear{
+    30%{
+        opacity: 80%;
+        fill: blue;
+    }
+    40%, 100%{
+        opacity: 100%;
+        fill: black;
+    }
+}
+
+#point1{
+    animation-name: drop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    opacity: 0;
+}
+#point2{
+    animation-name: drop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    opacity: 0;
+}
+#point3{
+    animation-name: drop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    opacity: 0;
+}
+#point4{
+    animation-name: drop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    opacity: 0;
+}
+@keyframes drop{
+    0%{
+        transform: translateY(-300px);
+    }
+    70%,100%{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+#point5{
+    animation-name: throw;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-delay: 4s;
+}
+
+@keyframes throw{
+    0%{
+        translate: 0 0px;
+    }
+    10%{
+        translate: -90px -200px;
+    }
+    25%, 80%{
+        translate: -120px -98px;
+    }
+}
